@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALHA AZAD NISHAD — CEO, Mawsim Yums | Dhaka</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Archivo Black, Space Grotesk & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['"Archivo Black"', '"Space Grotesk"', 'sans-serif'],
+                        heading: ['"Space Grotesk"', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        obsidian: '#060709',
+                        slateCard: '#0d1015',
+                        slateElevated: '#131720',
+                        borderSharp: '#1e2430',
+                        gold: {
+                            DEFAULT: '#f59e0b',
+                            light: '#fbbf24',
+                            dark: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-obsidian text-zinc-200 font-sans antialiased selection:bg-gold/30 selection:text-amber-200 overflow-x-hidden">
+
+    <!-- Subtle Ambient High-Contrast Backdrop -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div class="absolute -top-48 -left-48 w-[32rem] h-[32rem] bg-amber-500/[0.06] rounded-full blur-[140px]"></div>
+        <div class="absolute top-1/2 -right-48 w-[28rem] h-[28rem] bg-zinc-500/[0.05] rounded-full blur-[130px]"></div>
+    </div>
+
+    <!-- Sticky Header & Navigation -->
+    <header id="navbar" class="fixed top-0 inset-x-0 z-40 transition-all duration-200 border-b border-transparent">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Bold Brand Mark -->
+                <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+                    <div class="w-10 h-10 rounded-xl bg-slateCard border border-borderSharp group-hover:border-gold/60 flex items-center justify-center transition-colors">
+                        <span class="font-display text-gold text-base tracking-tighter">TAN</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-display text-zinc-50 tracking-tight text-sm sm:text-base uppercase leading-none">Talha Azad Nishad</span>
+                        <span class="text-[11px] font-heading font-semibold uppercase tracking-widest text-gold mt-1">CEO • Mawsim Yums</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-8 text-xs font-heading font-bold uppercase tracking-widest text-zinc-400">
+                    <a href="#about" class="hover:text-zinc-50 transition-colors py-2">About</a>
+                    <a href="#ventures" class="hover:text-zinc-50 transition-colors py-2">Ventures</a>
+                    <a href="#expertise" class="hover:text-zinc-50 transition-colors py-2">Expertise</a>
+                    <a href="#connect" class="hover:text-zinc-50 transition-colors py-2">Connect</a>
+                </nav>
+
+                <!-- Primary WhatsApp Action & Mobile Trigger -->
+                <div class="flex items-center gap-2.5">
+                    <a href="https://wa.me/8801841284189" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gold hover:bg-gold-light text-obsidian font-heading font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-amber-500/10">
+                        <i data-lucide="message-circle" class="w-4 h-4 stroke-[2.5]"></i>
+                        <span>WhatsApp Direct</span>
+                    </a>
+                    
+                    <button id="mobile-menu-btn" aria-label="Open Navigation Menu" class="md:hidden p-2.5 rounded-xl bg-slateCard border border-borderSharp text-zinc-200 hover:border-gold/50 focus:outline-none">
+                        <i data-lucide="menu" id="menu-icon-open" class="w-5 h-5"></i>
+                        <i data-lucide="x" id="menu-icon-close" class="w-5 h-5 hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slateCard/98 backdrop-blur-xl border-b border-borderSharp px-4 pt-3 pb-6 space-y-1.5">
+            <a href="#about" class="mobile-nav-link block px-4 py-3 rounded-xl font-heading font-bold uppercase tracking-wider text-sm text-zinc-200 hover:bg-slateElevated hover:text-gold transition-colors">About & Leadership</a>
+            <a href="#ventures" class="mobile-nav-link block px-4 py-3 rounded-xl font-heading font-bold uppercase tracking-wider text-sm text-zinc-200 hover:bg-slateElevated hover:text-gold transition-colors">Mawsim Yums & Ventures</a>
+            <a href="#expertise" class="mobile-nav-link block px-4 py-3 rounded-xl font-heading font-bold uppercase tracking-wider text-sm text-zinc-200 hover:bg-slateElevated hover:text-gold transition-colors">Core Expertise</a>
+            <a href="#connect" class="mobile-nav-link block px-4 py-3 rounded-xl font-heading font-bold uppercase tracking-wider text-sm text-zinc-200 hover:bg-slateElevated hover:text-gold transition-colors">Direct Contact & Links</a>
+            <div class="pt-2">
+                <a href="https://wa.me/8801841284189" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-gold text-obsidian font-heading font-bold text-sm uppercase tracking-wider">
+                    <i data-lucide="message-circle" class="w-4 h-4 stroke-[2.5]"></i>
+                    <span>Chat on WhatsApp (01841-284189)</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="relative pt-28 pb-16 sm:pt-36 sm:pb-24 lg:pt-44 lg:pb-28 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="max-w-4xl">
+                <!-- Location & Role Tag -->
+                <div class="inline-flex flex-wrap items-center gap-2.5 px-3.5 py-1.5 rounded-xl bg-slateCard border border-borderSharp text-xs font-heading font-bold uppercase tracking-widest text-zinc-300 mb-7">
+                    <span class="w-2 h-2 rounded-full bg-gold"></span>
+                    <span>Banasree, Rampura, Dhaka</span>
+                    <span class="text-zinc-600">•</span>
+                    <span class="text-gold">Founder & CEO</span>
+                </div>
+
+                <!-- Heavy Display Headline -->
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl text-zinc-50 uppercase tracking-tight leading-[1.03] mb-6">
+                    TALHA AZAD NISHAD<span class="text-gold">.</span><br />
+                    <span class="text-zinc-400 text-2xl sm:text-4xl lg:text-5xl block mt-2">
+                        CEO OF MAWSIM YUMS
+                    </span>
+                </h1>
+
+                <!-- Clear, Welcoming Subtitle for Customers, Relatives, Neighbors & Partners -->
+                <p class="text-base sm:text-xl text-zinc-300 leading-relaxed max-w-2xl mb-9 font-normal">
+                    Building trusted household brands in Bangladesh. Whether you are a <strong class="text-zinc-50 font-semibold">Mawsim Yums customer</strong> seeking pure organic honey, ghee, pickles, and dates—or a <strong class="text-zinc-50 font-semibold">relative, neighbor, or business partner</strong> staying connected—reach me directly below.
+                </p>
+
+                <!-- Primary Heavy CTAs -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-10">
+                    <a href="https://wa.me/8801841284189" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-gold hover:bg-gold-light text-obsidian font-heading font-bold text-sm sm:text-base uppercase tracking-wider transition-all shadow-xl shadow-amber-500/15">
+                        <i data-lucide="message-circle" class="w-5 h-5 stroke-[2.5]"></i>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+                    <a href="#ventures" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-slateCard hover:bg-slateElevated text-zinc-100 font-heading font-bold text-sm sm:text-base uppercase tracking-wider border border-borderSharp hover:border-zinc-600 transition-all">
+                        <span>Explore Mawsim Yums</span>
+                        <i data-lucide="arrow-down-right" class="w-5 h-5 text-gold"></i>
+                    </a>
+                </div>
+
+                <!-- Quick-Connect Social & Direct Links Strip -->
+                <div class="pt-6 border-t border-borderSharp/80">
+                    <p class="text-[11px] font-heading font-bold uppercase tracking-widest text-zinc-500 mb-3.5">Direct Official Links — Tap to Connect</p>
+                    <div class="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-2.5 sm:gap-3">
+                        <a href="https://wa.me/8801841284189" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-4 py-3 rounded-xl bg-slateCard hover:bg-slateElevated border border-borderSharp hover:border-emerald-500/50 text-xs sm:text-sm font-heading font-bold text-zinc-200 transition-all">
+                            <i data-lucide="phone" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                            <span>01841-284189</span>
+                        </a>
+                        <a href="https://www.facebook.com/share/19t1TbF7az/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-4 py-3 rounded-xl bg-slateCard hover:bg-slateElevated border border-borderSharp hover:border-gold/50 text-xs sm:text-sm font-heading font-bold text-zinc-200 transition-all">
+                            <i data-lucide="store" class="w-4 h-4 text-gold shrink-0"></i>
+                            <span>Mawsim Yums FB</span>
+                        </a>
+                        <a href="https://www.facebook.com/share/1A5jieGS9c/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-4 py-3 rounded-xl bg-slateCard hover:bg-slateElevated border border-borderSharp hover:border-sky-500/50 text-xs sm:text-sm font-heading font-bold text-zinc-200 transition-all">
+                            <i data-lucide="facebook" class="w-4 h-4 text-sky-400 shrink-0"></i>
+                            <span>Personal FB</span>
+                        </a>
+                        <a href="https://www.instagram.com/talhaazadnishad?fqnt=ZzE1aThuN3pxemQ5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-4 py-3 rounded-xl bg-slateCard hover:bg-slateElevated border border-borderSharp hover:border-pink-500/50 text-xs sm:text-sm font-heading font-bold text-zinc-200 transition-all">
+                            <i data-lucide="instagram" class="w-4 h-4 text-pink-400 shrink-0"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sharp Divider -->
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-px bg-borderSharp"></div>
+        </div>
+
+        <!-- 2. ABOUT & LEADERSHIP SECTION -->
+        <section id="about" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+                <!-- Left Column: Heavy Section Heading & Core Values -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 text-xs font-heading font-bold uppercase tracking-widest text-gold">
+                        <span>01</span>
+                        <span class="w-8 h-px bg-gold/50"></span>
+                        <span>About & Leadership</span>
+                    </div>
+                    <h2 class="font-display text-3xl sm:text-4xl text-zinc-50 uppercase tracking-tight leading-tight">
+                        Built on purity, trust & direct accountability.
+                    </h2>
+                    <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+                        Based in Banasree, Rampura, Dhaka, I lead <strong class="text-zinc-200">Mawsim Yums</strong> with a simple promise: deliver 100% authentic, unadulterated organic foods straight to families across Bangladesh.
+                    </p>
+                    
+                    <!-- Core Values List -->
+                    <ul class="space-y-3 pt-1 text-sm font-medium text-zinc-200">
+                        <li class="flex items-center gap-3 p-3 rounded-xl bg-slateCard border border-borderSharp">
+                            <span class="p-2 rounded-lg bg-obsidian border border-borderSharp text-gold">
+                                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                            </span>
+                            <span>Uncompromised Purity & Direct Sourcing</span>
+                        </li>
+                        <li class="flex items-center gap-3 p-3 rounded-xl bg-slateCard border border-borderSharp">
+                            <span class="p-2 rounded-lg bg-obsidian border border-borderSharp text-gold">
+                                <i data-lucide="users" class="w-4 h-4"></i>
+                            </span>
+                            <span>Personal Accessibility for Customers & Neighbors</span>
+                        </li>
+                        <li class="flex items-center gap-3 p-3 rounded-xl bg-slateCard border border-borderSharp">
+                            <span class="p-2 rounded-lg bg-obsidian border border-borderSharp text-gold">
+                                <i data-lucide="trending-up" class="w-4 h-4"></i>
+                            </span>
+                            <span>Disciplined Operations & Regional Growth</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Column: Narrative Card & Executive Pillars -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="p-6 sm:p-8 rounded-2xl bg-slateCard border border-borderSharp space-y-5">
+                        <h3 class="font-heading font-bold text-lg sm:text-xl text-zinc-50 uppercase tracking-wide">
+                            Why This Profile Exists
+                        </h3>
+                        <p class="text-zinc-300 leading-relaxed text-sm sm:text-base">
+                            In today's fast-moving market, trust matters more than ever. Whether you are ordering pure Sundarbans honey, artisanal pickles, pure desi ghee, or premium dates from <strong>Mawsim Yums</strong>—or you are a neighbor, relative, or business associate—you deserve to know exactly who stands behind the brand.
+                        </p>
+                        <p class="text-zinc-400 leading-relaxed text-sm sm:text-base">
+                            Every order, partnership, and conversation carries my personal commitment to honesty, quality assurance, and respectful service.
+                        </p>
+                    </div>
+
+                    <!-- Hard Highlights Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="p-5 rounded-2xl bg-slateCard border border-borderSharp">
+                            <div class="font-display text-2xl sm:text-3xl text-gold">100%</div>
+                            <div class="text-xs font-heading font-bold uppercase tracking-wider text-zinc-400 mt-1.5">Pure & Authentic</div>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-slateCard border border-borderSharp">
+                            <div class="font-display text-2xl sm:text-3xl text-zinc-50">DHAKA</div>
+                            <div class="text-xs font-heading font-bold uppercase tracking-wider text-zinc-400 mt-1.5">Banasree HQ</div>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1 p-5 rounded-2xl bg-slateCard border border-borderSharp">
+                            <div class="font-display text-2xl sm:text-3xl text-zinc-50">DIRECT</div>
+                            <div class="text-xs font-heading font-bold uppercase tracking-wider text-zinc-400 mt-1.5">CEO Support Line</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sharp Divider -->
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-px bg-borderSharp"></div>
+        </div>
+
+        <!-- 3. VENTURES & PRODUCT LINES SECTION -->
+        <section id="ventures" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div>
+                    <div class="inline-flex items-center gap-2.5 text-xs font-heading font-bold uppercase tracking-widest text-gold mb-4">
+                        <span>02</span>
+                        <span class="w-8 h-px bg-gold/50"></span>
+                        <span>Businesses & Product Lines</span>
+                    </div>
+                    <h2 class="font-display text-3xl sm:text-4xl text-zinc-50 uppercase tracking-tight">
+                        Mawsim Yums & Leadership
+                    </h2>
+                </div>
+
+                <!-- Filter Controls -->
+                <div id="project-filters" class="flex flex-wrap gap-2" role="tablist" aria-label="Filter ventures">
+                    <button data-filter="all" class="filter-btn active px-4 py-2.5 rounded-xl text-xs font-heading font-bold uppercase tracking-wider bg-gold text-obsidian border border-gold transition-all">
+                        All
+                    </button>
+                    <button data-filter="mawsim" class="filter-btn px-4 py-2.5 rounded-xl text-xs font-heading font-bold uppercase tracking-wider bg-slateCard text-zinc-400 hover:text-zinc-100 border border-borderSharp transition-all">
+                        Mawsim Yums
+                    </button>
+                    <button data-filter="leadership" class="filter-btn px-4 py-2.5 rounded-xl text-xs font-heading font-bold uppercase tracking-wider bg-slateCard text-zinc-400 hover:text-zinc-100 border border-borderSharp transition-all">
+                        Leadership & Ops
+                    </button>
+                </div>
+            </div>
+
+            <!-- Ventures Grid -->
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Rendered via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Sharp Divider -->
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-px bg-borderSharp"></div>
+        </div>
+
+        <!-- 4. CORE EXPERTISE & OPERATIONS SECTION -->
+        <section id="expertise" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="max-w-2xl mb-12">
+                <div class="inline-flex items-center gap-2.5 text-xs font-heading font-bold uppercase tracking-widest text-gold mb-4">
+                    <span>03</span>
+                    <span class="w-8 h-px bg-gold/50"></span>
+                    <span>Core Expertise</span>
+                </div>
+                <h2 class="font-display text-3xl sm:text-4xl text-zinc-50 uppercase tracking-tight">
+                    Operational Pillars
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Pillar 1 -->
+                <div class="p-6 sm:p-7 rounded-2xl bg-slateCard border border-borderSharp hover:border-zinc-700 transition-colors">
+                    <div class="w-11 h-11 rounded-xl bg-obsidian border border-borderSharp flex items-center justify-center text-gold mb-5">
+                        <i data-lucide="award" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-zinc-50 uppercase tracking-wide mb-2">
+                        Organic Food Sourcing & Quality Control
+                    </h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-5">
+                        Direct farmer and collector partnerships ensuring pure raw honey, traditional homemade achar (pickles), pure cow ghee, and select dates without additives.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Purity Testing</span>
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Hygienic Packaging</span>
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Direct Harvest</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="p-6 sm:p-7 rounded-2xl bg-slateCard border border-borderSharp hover:border-zinc-700 transition-colors">
+                    <div class="w-11 h-11 rounded-xl bg-obsidian border border-borderSharp flex items-center justify-center text-gold mb-5">
+                        <i data-lucide="truck" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-zinc-50 uppercase tracking-wide mb-2">
+                        E-Commerce & Direct-to-Home Delivery
+                    </h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-5">
+                        Fast, reliable order fulfillment across Dhaka (including Banasree & Rampura) and nationwide courier dispatch with transparent cash-on-delivery support.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Dhaka Express</span>
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Nationwide Dispatch</span>
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">WhatsApp Ordering</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="p-6 sm:p-7 rounded-2xl bg-slateCard border border-borderSharp hover:border-zinc-700 transition-colors">
+                    <div class="w-11 h-11 rounded-xl bg-obsidian border border-borderSharp flex items-center justify-center text-gold mb-5">
+                        <i data-lucide="briefcase" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-zinc-50 uppercase tracking-wide mb-2">
+                        Brand Building & Digital Operations
+                    </h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-5">
+                        Leading Mawsim Yums from product formulation and visual identity to digital marketing, social commerce, and repeat customer retention.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Brand Strategy</span>
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Social Commerce</span>
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Supply Chain</span>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="p-6 sm:p-7 rounded-2xl bg-slateCard border border-borderSharp hover:border-zinc-700 transition-colors">
+                    <div class="w-11 h-11 rounded-xl bg-obsidian border border-borderSharp flex items-center justify-center text-gold mb-5">
+                        <i data-lucide="handshake" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg text-zinc-50 uppercase tracking-wide mb-2">
+                        Customer, Neighbor & Community Trust
+                    </h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed mb-5">
+                        Maintaining open communication channels so every customer, relative, neighbor, and wholesale partner receives prompt, personal attention.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Direct Support</span>
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Corporate Gifting</span>
+                        <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">Community First</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sharp Divider -->
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-px bg-borderSharp"></div>
+        </div>
+
+        <!-- 5. DIRECT CONNECT & CONTACT HUB -->
+        <section id="connect" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="max-w-2xl mb-12">
+                <div class="inline-flex items-center gap-2.5 text-xs font-heading font-bold uppercase tracking-widest text-gold mb-4">
+                    <span>04</span>
+                    <span class="w-8 h-px bg-gold/50"></span>
+                    <span>Direct Connect</span>
+                </div>
+                <h2 class="font-display text-3xl sm:text-4xl text-zinc-50 uppercase tracking-tight mb-3">
+                    Reach Out Anytime
+                </h2>
+                <p class="text-zinc-400 text-sm sm:text-base">
+                    For Mawsim Yums orders, business inquiries, or personal connection from friends, relatives, and neighbors—use any direct channel below.
+                </p>
+            </div>
+
+            <!-- 4 Dedicated High-Contrast Tap Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+                <!-- Card 1: WhatsApp -->
+                <div class="p-5 rounded-2xl bg-slateCard border border-borderSharp hover:border-emerald-500/60 transition-all flex flex-col justify-between gap-4">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            </span>
+                            <button id="copy-wa-btn" class="px-2.5 py-1.5 rounded-lg bg-obsidian hover:bg-slateElevated border border-borderSharp text-[11px] font-heading font-bold uppercase tracking-wider text-zinc-300 hover:text-white transition-colors flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i>
+                                <span id="copy-wa-label">Copy</span>
+                            </button>
+                        </div>
+                        <h3 class="font-heading font-bold text-base text-zinc-50 uppercase">WhatsApp Direct</h3>
+                        <p id="wa-number-text" class="text-sm font-mono font-semibold text-emerald-400 mt-1">01841-284189</p>
+                    </div>
+                    <a href="https://wa.me/8801841284189" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-obsidian font-heading font-bold text-xs uppercase tracking-wider text-center transition-colors">
+                        Message Now
+                    </a>
+                </div>
+
+                <!-- Card 2: Mawsim Yums Official Facebook -->
+                <div class="p-5 rounded-2xl bg-slateCard border border-borderSharp hover:border-gold/60 transition-all flex flex-col justify-between gap-4">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-gold">
+                                <i data-lucide="store" class="w-5 h-5"></i>
+                            </span>
+                            <span class="text-[10px] font-heading font-bold uppercase tracking-widest text-gold px-2 py-1 rounded bg-obsidian border border-borderSharp">Official Page</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-base text-zinc-50 uppercase">Mawsim Yums</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Products, reviews & official page</p>
+                    </div>
+                    <a href="https://www.facebook.com/share/19t1TbF7az/" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-gold hover:bg-gold-light text-obsidian font-heading font-bold text-xs uppercase tracking-wider text-center transition-colors">
+                        Visit Page
+                    </a>
+                </div>
+
+                <!-- Card 3: Personal Facebook -->
+                <div class="p-5 rounded-2xl bg-slateCard border border-borderSharp hover:border-sky-500/60 transition-all flex flex-col justify-between gap-4">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="p-2.5 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400">
+                                <i data-lucide="facebook" class="w-5 h-5"></i>
+                            </span>
+                            <span class="text-[10px] font-heading font-bold uppercase tracking-widest text-zinc-400 px-2 py-1 rounded bg-obsidian border border-borderSharp">Personal</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-base text-zinc-50 uppercase">Personal Facebook</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Talha Azad Nishad</p>
+                    </div>
+                    <a href="https://www.facebook.com/share/1A5jieGS9c/" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-slateElevated hover:bg-zinc-800 border border-borderSharp text-zinc-100 font-heading font-bold text-xs uppercase tracking-wider text-center transition-colors">
+                        Open Profile
+                    </a>
+                </div>
+
+                <!-- Card 4: Instagram -->
+                <div class="p-5 rounded-2xl bg-slateCard border border-borderSharp hover:border-pink-500/60 transition-all flex flex-col justify-between gap-4">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="p-2.5 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400">
+                                <i data-lucide="instagram" class="w-5 h-5"></i>
+                            </span>
+                            <span class="text-[10px] font-heading font-bold uppercase tracking-widest text-zinc-400 px-2 py-1 rounded bg-obsidian border border-borderSharp">@talhaazadnishad</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-base text-zinc-50 uppercase">Instagram</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Updates, reels & daily moments</p>
+                    </div>
+                    <a href="https://www.instagram.com/talhaazadnishad?fqnt=ZzE1aThuN3pxemQ5" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-slateElevated hover:bg-zinc-800 border border-borderSharp text-zinc-100 font-heading font-bold text-xs uppercase tracking-wider text-center transition-colors">
+                        Follow on IG
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interactive Quick Message / Order Composer -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-5 p-6 sm:p-8 rounded-2xl bg-slateCard border border-borderSharp space-y-5">
+                    <div class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-widest text-gold">
+                        <i data-lucide="map-pin" class="w-4 h-4"></i>
+                        <span>Location & Hours</span>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-zinc-50 uppercase">
+                        Banasree, Rampura, Dhaka
+                    </h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed">
+                        Local pickup and fast delivery available across Banasree, Rampura, Aftabnagar, Bashundhara, Gulshan, and all over Bangladesh.
+                    </p>
+                    <div class="pt-2 space-y-2.5 text-xs font-heading font-semibold uppercase tracking-wider text-zinc-300">
+                        <div class="flex items-center justify-between py-2 border-b border-borderSharp">
+                            <span class="text-zinc-500">WhatsApp & Call</span>
+                            <span class="text-zinc-100 font-mono">01841-284189</span>
+                        </div>
+                        <div class="flex items-center justify-between py-2 border-b border-borderSharp">
+                            <span class="text-zinc-500">Brand</span>
+                            <span class="text-gold">Mawsim Yums</span>
+                        </div>
+                        <div class="flex items-center justify-between py-2">
+                            <span class="text-zinc-500">Response Time</span>
+                            <span class="text-emerald-400">Usually within 30 mins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Form with Direct WhatsApp Forward & On-Page Confirmation -->
+                <div class="lg:col-span-7">
+                    <form id="contact-form" novalidate class="p-6 sm:p-8 rounded-2xl bg-slateCard border border-borderSharp space-y-5">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <h3 class="font-heading font-bold text-lg text-zinc-50 uppercase">Send a Quick Note or Order</h3>
+                            <span class="text-xs text-zinc-400">Instant WhatsApp or Web Submit</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-xs font-heading font-bold uppercase tracking-wider text-zinc-400 mb-2">Your Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="e.g. Rahim Uddin"
+                                    class="w-full px-4 py-3 rounded-xl bg-obsidian border border-borderSharp text-zinc-100 placeholder-zinc-600 text-sm focus:outline-none focus:border-gold transition-colors">
+                                <p id="error-name" class="hidden text-xs text-rose-400 mt-1.5">Please enter your name.</p>
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-xs font-heading font-bold uppercase tracking-wider text-zinc-400 mb-2">Phone / WhatsApp *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="e.g. 017XX-XXXXXX"
+                                    class="w-full px-4 py-3 rounded-xl bg-obsidian border border-borderSharp text-zinc-100 placeholder-zinc-600 text-sm focus:outline-none focus:border-gold transition-colors">
+                                <p id="error-phone" class="hidden text-xs text-rose-400 mt-1.5">Please enter your phone number.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="topic" class="block text-xs font-heading font-bold uppercase tracking-wider text-zinc-400 mb-2">Purpose</label>
+                            <select id="topic" name="topic" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-borderSharp text-zinc-100 text-sm focus:outline-none focus:border-gold transition-colors">
+                                <option value="Mawsim Yums Product Order">Mawsim Yums — Product Order / Inquiry</option>
+                                <option value="Business & Partnership">Business & Wholesale Partnership</option>
+                                <option value="Relative / Neighbor / Personal">Relative / Neighbor / Personal Greeting</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-xs font-heading font-bold uppercase tracking-wider text-zinc-400 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="3" required placeholder="Write your order details, address, or greeting here..."
+                                class="w-full px-4 py-3 rounded-xl bg-obsidian border border-borderSharp text-zinc-100 placeholder-zinc-600 text-sm focus:outline-none focus:border-gold transition-colors resize-none"></textarea>
+                            <p id="error-message" class="hidden text-xs text-rose-400 mt-1.5">Please enter a short message (at least 5 characters).</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                            <button type="button" id="send-whatsapp-form-btn" class="w-full py-3.5 px-5 rounded-xl bg-gold hover:bg-gold-light text-obsidian font-heading font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="message-circle" class="w-4 h-4 stroke-[2.5]"></i>
+                                <span>Send via WhatsApp</span>
+                            </button>
+                            <button type="submit" id="submit-btn" class="w-full py-3.5 px-5 rounded-xl bg-slateElevated hover:bg-zinc-800 border border-borderSharp text-zinc-100 font-heading font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+                                <span>Submit on Page</span>
+                                <i data-lucide="send" class="w-4 h-4 text-gold"></i>
+                            </button>
+                        </div>
+
+                        <!-- Confirmation Banner -->
+                        <div id="form-feedback" class="hidden p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-sm flex items-start gap-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+                            <div>
+                                <p class="font-heading font-bold text-emerald-200 uppercase text-xs tracking-wider">Note Recorded</p>
+                                <p class="text-xs text-emerald-300/90 mt-1">Thank you! For the fastest response, you can also tap "Send via WhatsApp" to connect directly with 01841-284189.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer class="border-t border-borderSharp py-10 px-4 sm:px-6 lg:px-8 bg-slateCard/40">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-center sm:text-left">
+                <p class="font-display text-sm uppercase text-zinc-100">Talha Azad Nishad</p>
+                <p class="text-xs text-zinc-500 mt-0.5">&copy; <span id="current-year"></span> CEO, Mawsim Yums • Banasree, Rampura, Dhaka</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-heading font-bold uppercase tracking-wider text-zinc-400">
+                <a href="https://wa.me/8801841284189" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors">WhatsApp</a>
+                <a href="https://www.facebook.com/share/19t1TbF7az/" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors">Mawsim Yums</a>
+                <a href="https://www.facebook.com/share/1A5jieGS9c/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors">Facebook</a>
+                <a href="https://www.instagram.com/talhaazadnishad?fqnt=ZzE1aThuN3pxemQ5" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition-colors">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Venture / Product Detail Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div id="modal-backdrop" class="fixed inset-0 bg-black/85 backdrop-blur-sm transition-opacity"></div>
+        
+        <div class="relative z-10 w-full max-w-2xl rounded-2xl bg-slateCard border border-borderSharp shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
+            <div class="p-6 sm:p-7 bg-obsidian border-b border-borderSharp flex items-start justify-between gap-4">
+                <div>
+                    <span id="modal-category" class="inline-block px-3 py-1 rounded-lg bg-slateCard border border-borderSharp text-[11px] font-heading font-bold uppercase tracking-widest text-gold mb-3">Mawsim Yums</span>
+                    <h3 id="modal-title" class="font-display text-2xl sm:text-3xl text-zinc-50 uppercase tracking-tight">Title</h3>
+                </div>
+                <button id="close-modal-btn" aria-label="Close modal" class="p-2.5 rounded-xl bg-slateCard hover:bg-slateElevated border border-borderSharp text-zinc-400 hover:text-white transition-colors shrink-0">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <div class="p-6 sm:p-7 overflow-y-auto space-y-6">
+                <div>
+                    <h4 class="text-xs font-heading font-bold uppercase tracking-widest text-zinc-500 mb-2">Overview</h4>
+                    <p id="modal-description" class="text-zinc-300 text-sm sm:text-base leading-relaxed"></p>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-heading font-bold uppercase tracking-widest text-zinc-500 mb-2.5">Key Standards & Offerings</h4>
+                    <ul id="modal-highlights" class="space-y-2.5 text-sm text-zinc-200"></ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-heading font-bold uppercase tracking-widest text-zinc-500 mb-2.5">Tags</h4>
+                    <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+                </div>
+            </div>
+
+            <div class="p-5 sm:px-7 bg-obsidian border-t border-borderSharp flex flex-wrap items-center justify-end gap-3">
+                <a id="modal-fb-link" href="https://www.facebook.com/share/19t1TbF7az/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-slateCard hover:bg-slateElevated border border-borderSharp text-xs font-heading font-bold uppercase tracking-wider text-zinc-200 transition-colors">
+                    <i data-lucide="facebook" class="w-4 h-4 text-gold"></i>
+                    <span>Mawsim Yums FB</span>
+                </a>
+                <a id="modal-wa-link" href="https://wa.me/8801841284189" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gold hover:bg-gold-light text-xs font-heading font-bold uppercase tracking-wider text-obsidian transition-colors">
+                    <i data-lucide="message-circle" class="w-4 h-4 stroke-[2.5]"></i>
+                    <span>Order / Inquire on WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Sticky Header & Mobile Drawer
+            const navbar = document.getElementById('navbar');
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const iconOpen = document.getElementById('menu-icon-open');
+            const iconClose = document.getElementById('menu-icon-close');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('bg-obsidian/90', 'backdrop-blur-md', 'border-borderSharp');
+                    navbar.classList.remove('border-transparent');
+                } else {
+                    navbar.classList.remove('bg-obsidian/90', 'backdrop-blur-md', 'border-borderSharp');
+                    navbar.classList.add('border-transparent');
+                }
+            });
+
+            function toggleMobileMenu() {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden', !isHidden);
+                iconOpen.classList.toggle('hidden', isHidden);
+                iconClose.classList.toggle('hidden', !isHidden);
+            }
+
+            mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) toggleMobileMenu();
+                });
+            });
+
+            // Ventures & Mawsim Yums Product Lines Data
+            const venturesData = [
+                {
+                    id: 'honey-ghee',
+                    title: 'Pure Organic Honey & Desi Ghee',
+                    category: 'mawsim',
+                    categoryLabel: 'Mawsim Yums Flagship',
+                    summary: '100% raw, unprocessed natural honey and pure traditional cow ghee sourced directly for health-conscious households.',
+                    description: 'At Mawsim Yums, every batch of honey and ghee undergoes strict purity verification before reaching your dining table. Free from sugar syrup, artificial flavors, or preservatives.',
+                    highlights: [
+                        'Raw Sundarbans, Mustard & Litchi Blossom Honey varieties.',
+                        'Traditional slow-churned pure Danadar Cow Ghee with rich natural aroma.',
+                        'Sealed in food-grade jars with direct home delivery across Dhaka & Bangladesh.'
+                    ],
+                    tags: ['Raw Honey', 'Pure Ghee', '100% Natural', 'Lab Verified'],
+                    waMessage: 'Assalamu Alaikum Talha vai, I would like to inquire about Mawsim Yums Pure Honey & Ghee.'
+                },
+                {
+                    id: 'pickles-dates',
+                    title: 'Traditional Pickles & Premium Dates',
+                    category: 'mawsim',
+                    categoryLabel: 'Mawsim Yums Artisanal',
+                    summary: 'Authentic homemade Bangladeshi achar (pickles) crafted with pure mustard oil and handpicked premium Arabian dates.',
+                    description: 'Prepared using time-honored family recipes in hygienic conditions, paired with fresh, nutrient-rich imported dates ideal for daily nutrition and Ramadan.',
+                    highlights: [
+                        'Small-batch Garlic, Olive (Jolpai), Mango & Naga Pickles in pure mustard oil.',
+                        'Carefully graded Ajwa, Medjool, and Mariam dates stored in temperature-controlled conditions.',
+                        'Available for single household orders and festive gift boxes.'
+                    ],
+                    tags: ['Homemade Achar', 'Premium Dates', 'Mustard Oil', 'Gift Packs'],
+                    waMessage: 'Assalamu Alaikum Talha vai, I would like to order Mawsim Yums Pickles & Dates.'
+                },
+                {
+                    id: 'customer-fulfillment',
+                    title: 'Direct-to-Customer Delivery & Care',
+                    category: 'leadership',
+                    categoryLabel: 'Operations & Service',
+                    summary: 'Streamlined order handling, Dhaka same-day/next-day dispatch, and nationwide courier logistics.',
+                    description: 'Customer satisfaction does not end at checkout. I personally oversee quality assurance, packaging durability, and responsive after-sales support for every household.',
+                    highlights: [
+                        'Fast local delivery in Banasree, Rampura, and all Dhaka residential areas.',
+                        'Safe, leak-proof packaging engineered for nationwide courier transit.',
+                        'Direct WhatsApp support line (01841-284189) for instant order tracking.'
+                    ],
+                    tags: ['Dhaka Delivery', 'Nationwide Courier', 'Customer First', 'Quality Control'],
+                    waMessage: 'Assalamu Alaikum Talha vai, I have a question regarding Mawsim Yums delivery.'
+                },
+                {
+                    id: 'business-growth',
+                    title: 'Brand Strategy & Regional Partnerships',
+                    category: 'leadership',
+                    categoryLabel: 'Executive Leadership',
+                    summary: 'Scaling trusted consumer food brands, corporate gifting supply, and wholesale collaborations in Bangladesh.',
+                    description: 'Focused on sustainable growth, digital brand building, and transparent partnerships with suppliers, corporate buyers, and local distributors.',
+                    highlights: [
+                        'Custom corporate & family event gift hampers featuring Mawsim Yums products.',
+                        'Wholesale supply partnerships for specialty organic food retailers.',
+                        'Community-driven growth rooted in neighborhood trust and word-of-mouth.'
+                    ],
+                    tags: ['CEO Leadership', 'Wholesale', 'Corporate Gifting', 'Dhaka Business'],
+                    waMessage: 'Assalamu Alaikum Talha vai, I would like to discuss a business partnership.'
+                }
+            ];
+
+            const projectsGrid = document.getElementById('projects-grid');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+
+            function renderVentures(filter = 'all') {
+                const filtered = filter === 'all'
+                    ? venturesData
+                    : venturesData.filter(item => item.category === filter);
+
+                projectsGrid.innerHTML = filtered.map(item => `
+                    <article class="group rounded-2xl bg-slateCard border border-borderSharp hover:border-gold/60 transition-all duration-200 flex flex-col justify-between overflow-hidden">
+                        <div class="p-6 sm:p-7">
+                            <div class="flex items-center justify-between gap-3 mb-5">
+                                <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-[11px] font-heading font-bold uppercase tracking-widest text-gold">
+                                    ${item.categoryLabel}
+                                </span>
+                                <button onclick="openVentureModal('${item.id}')" aria-label="View details for ${item.title}" class="p-2 rounded-xl bg-obsidian hover:bg-gold border border-borderSharp hover:border-gold text-zinc-400 hover:text-obsidian transition-colors">
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+
+                            <h3 class="font-display text-xl sm:text-2xl text-zinc-50 uppercase tracking-tight group-hover:text-gold transition-colors mb-3">
+                                ${item.title}
+                            </h3>
+
+                            <p class="text-sm sm:text-base text-zinc-400 leading-relaxed mb-6">
+                                ${item.summary}
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                                ${item.tags.map(tag => `
+                                    <span class="px-2.5 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">
+                                        ${tag}
+                                    </span>
+                                `).join('')}
+                            </div>
+                        </div>
+
+                        <div class="px-6 py-4 bg-obsidian/70 border-t border-borderSharp flex items-center justify-between gap-3">
+                            <button onclick="openVentureModal('${item.id}')" class="text-xs font-heading font-bold uppercase tracking-wider text-zinc-200 hover:text-gold inline-flex items-center gap-1.5 transition-colors">
+                                <span>Full Details</span>
+                                <i data-lucide="chevron-right" class="w-4 h-4 text-gold"></i>
+                            </button>
+                            <a href="https://wa.me/8801841284189?text=${encodeURIComponent(item.waMessage)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gold/15 hover:bg-gold border border-gold/30 hover:border-gold text-gold hover:text-obsidian font-heading font-bold text-xs uppercase tracking-wider transition-all">
+                                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </article>
+                `).join('');
+
+                lucide.createIcons();
+            }
+
+            renderVentures('all');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-gold', 'text-obsidian', 'border-gold');
+                        b.classList.add('bg-slateCard', 'text-zinc-400', 'border-borderSharp');
+                    });
+                    btn.classList.remove('bg-slateCard', 'text-zinc-400', 'border-borderSharp');
+                    btn.classList.add('bg-gold', 'text-obsidian', 'border-gold');
+                    renderVentures(btn.getAttribute('data-filter'));
+                });
+            });
+
+            // Modal Inspection Logic
+            const modal = document.getElementById('project-modal');
+            const modalBackdrop = document.getElementById('modal-backdrop');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+
+            window.openVentureModal = function(id) {
+                const item = venturesData.find(v => v.id === id);
+                if (!item) return;
+
+                document.getElementById('modal-category').textContent = item.categoryLabel;
+                document.getElementById('modal-title').textContent = item.title;
+                document.getElementById('modal-description').textContent = item.description;
+                document.getElementById('modal-wa-link').href = `https://wa.me/8801841284189?text=${encodeURIComponent(item.waMessage)}`;
+
+                document.getElementById('modal-highlights').innerHTML = item.highlights.map(h => `
+                    <li class="flex items-start gap-2.5">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+                        <span>${h}</span>
+                    </li>
+                `).join('');
+
+                document.getElementById('modal-tags').innerHTML = item.tags.map(t => `
+                    <span class="px-3 py-1 rounded-lg bg-obsidian border border-borderSharp text-xs font-heading font-semibold text-zinc-300">${t}</span>
+                `).join('');
+
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+                lucide.createIcons();
+            };
+
+            function closeVentureModal() {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+
+            closeModalBtn.addEventListener('click', closeVentureModal);
+            modalBackdrop.addEventListener('click', closeVentureModal);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeVentureModal();
+            });
+
+            // One-Click Copy WhatsApp Number
+            const copyWaBtn = document.getElementById('copy-wa-btn');
+            const copyWaLabel = document.getElementById('copy-wa-label');
+            const waNumberText = document.getElementById('wa-number-text').textContent.trim();
+
+            copyWaBtn.addEventListener('click', () => {
+                const tempInput = document.createElement('textarea');
+                tempInput.value = waNumberText;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                try {
+                    document.execCommand('copy');
+                    copyWaLabel.textContent = 'Copied!';
+                    copyWaBtn.classList.add('border-emerald-500/60', 'text-emerald-300');
+                    setTimeout(() => {
+                        copyWaLabel.textContent = 'Copy';
+                        copyWaBtn.classList.remove('border-emerald-500/60', 'text-emerald-300');
+                    }, 2000);
+                } catch (err) {
+                    copyWaLabel.textContent = '01841-284189';
+                }
+                document.body.removeChild(tempInput);
+            });
+
+            // Contact Form Validation & Direct WhatsApp Composer
+            const contactForm = document.getElementById('contact-form');
+            const sendWhatsappFormBtn = document.getElementById('send-whatsapp-form-btn');
+            const formFeedback = document.getElementById('form-feedback');
+
+            function validateContactFields() {
+                const nameInput = document.getElementById('name');
+                const phoneInput = document.getElementById('phone');
+                const messageInput = document.getElementById('message');
+
+                const errName = document.getElementById('error-name');
+                const errPhone = document.getElementById('error-phone');
+                const errMessage = document.getElementById('error-message');
+
+                [errName, errPhone, errMessage].forEach(el => el.classList.add('hidden'));
+                [nameInput, phoneInput, messageInput].forEach(el => el.classList.remove('border-rose-500'));
+
+                let valid = true;
+
+                if (!nameInput.value.trim()) {
+                    errName.classList.remove('hidden');
+                    nameInput.classList.add('border-rose-500');
+                    valid = false;
+                }
+
+                if (phoneInput.value.trim().length < 6) {
+                    errPhone.classList.remove('hidden');
+                    phoneInput.classList.add('border-rose-500');
+                    valid = false;
+                }
+
+                if (messageInput.value.trim().length < 5) {
+                    errMessage.classList.remove('hidden');
+                    messageInput.classList.add('border-rose-500');
+                    valid = false;
+                }
+
+                return {
+                    valid,
+                    name: nameInput.value.trim(),
+                    phone: phoneInput.value.trim(),
+                    topic: document.getElementById('topic').value,
+                    message: messageInput.value.trim()
+                };
+            }
+
+            // Send directly to WhatsApp 01841-284189
+            sendWhatsappFormBtn.addEventListener('click', () => {
+                const data = validateContactFields();
+                if (!data.valid) return;
+
+                const compiledText = `Assalamu Alaikum Talha Azad Nishad,\n\n*Name:* ${data.name}\n*Phone:* ${data.phone}\n*Purpose:* ${data.topic}\n*Message:* ${data.message}`;
+                const waUrl = `https://wa.me/8801841284189?text=${encodeURIComponent(compiledText)}`;
+                window.open(waUrl, '_blank', 'noopener,noreferrer');
+            });
+
+            // On-page submit confirmation
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const data = validateContactFields();
+                if (!data.valid) return;
+
+                contactForm.reset();
+                formFeedback.classList.remove('hidden');
+                lucide.createIcons();
+
+                setTimeout(() => {
+                    formFeedback.classList.add('hidden');
+                }, 7000);
+            });
+        });
+    </script>
+</body>
+</html>
